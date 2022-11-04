@@ -24,18 +24,15 @@ scanf("%d", &validarInteiro);
 do
 {
 printf("Passou de Fase!!! Agora digite um valor de 1 a 9,9:");
-fflush(stdin);
 scanf("%f", &validarReal);
 } while (validarReal < 1 || validarReal >= 9.9);
 
-
 do
 {
-printf("Inseto voce so tem duas opcoes digitar a ou A:\n");
-fflush(stdin);
+printf("Inseto voce so tem duas opcoes digitar a ou A:");
+getchar();
 scanf("%c", &validarCaracter);
-fflush(stdin);
-} while (validarCaracter != 'a'|| validarCaracter != 'A');
+} while (validarCaracter != 'a' && validarCaracter != 'A');
 
 printf("Vamos as variaveis !!!! \n");
 printf("ValidarInteiro: %d \n", validarInteiro);
